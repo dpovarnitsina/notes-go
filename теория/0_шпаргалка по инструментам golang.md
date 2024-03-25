@@ -146,7 +146,7 @@ $ go tool compile -help                        # complete list of available comp
 $ go build -gcflags="-m -m" -o=/tmp/foo .      # print optimization decisions
 $ go build -gcflags="all=-m" -o=/tmp/foo .     # optimization decisions for dependencies too
 $ go build -gcflags="all=-N -l" -o=/tmp/foo .  # disable optimizations and inlining
-$ go tool link -help           # list of available linker flags
+$ go tool link -help                           # list of available linker flags
 $ go build -ldflags="-X main.version=1.2.3" -o=/tmp/foo . # add a version number
 $ go build -ldflags="-s -w" -o=/tmp/foo .      # strip debug information from the binary
 $ CGO_ENABLED=0 GOOS=linux go build -a -ldflags '-extldflags "-static"' . # make the binary as static as possible
